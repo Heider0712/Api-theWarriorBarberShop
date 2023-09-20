@@ -1,0 +1,14 @@
+GET http://localhost:8081/api/usuario
+###
+POST http://localhost:8081/api/usuario
+Content-Type: application/json
+
+{
+  "nombreUsu": "jplf",
+  "nombre": "Juan",
+  "apellidos": "lizcano",
+  "Correo": "jplf@mail.com",
+  "celular": "3185173515",
+  "password": "123",
+  "rol": "Admin"
+}

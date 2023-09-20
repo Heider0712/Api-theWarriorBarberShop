@@ -1,0 +1,17 @@
+echo "# TheWarriorBarberShop" >> README.md
+git add README.md
+git branch -M main (elegir una rama)
+
+git init
+git add .
+git commit -m "front"
+git config user.email "jplizcano69@gmail.com"
+git config user.name "JPLizcano"
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/JPLizcano/TheWarriorBarberShop.git
+git push -u origin main
+
+JPLizcano
+J1020494p
+jplizcano69@gmail.com

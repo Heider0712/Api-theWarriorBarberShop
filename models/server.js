@@ -11,6 +11,7 @@ class server {
         this.usuarioPath = '/api/usuario' //Ruta para la api usuario(Ruta pública)
         this.configuracionPath = '/api/configuracion' //Ruta para la api usuario(Ruta pública)
         this.empleadoPath = '/api/empleado' //Ruta para la api usuario(Ruta pública)
+        this.pruebaPath= '/api/prueba'
         this.middlewares() //Puente para conectar base de datos
         this.conectarDB() //Conectar a la base de datos
         this.routes()
@@ -33,6 +34,7 @@ class server {
         this.app.use(this.usuarioPath, require('../routes/usuario'))
         this.app.use(this.configuracionPath, require('../routes/configuracion'))
         this.app.use(this.empleadoPath, require('../routes/empleado'))
+        this.app.use(this.pruebaPath, require('../routes/prueba'))
     }
 
     //Funciones asíncornas. Siempre que hay asincónico hay un await
